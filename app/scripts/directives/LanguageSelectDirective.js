@@ -13,15 +13,20 @@ angular.module('miamiApp')
       restrict: 'A',
       replace: true,
       template: ''+
-        '<div class="language-select" ng-if="visible">'+
-          '<label>'+
-            '{{"directives.language-select.Language" | translate}}:'+
-            '<select ng-model="currentLocaleDisplayName"'+
-              'ng-options="localesDisplayName for localesDisplayName in localesDisplayNames"'+
-              'ng-change="changeLanguage(currentLocaleDisplayName)">'+
-            '</select>'+
-          '</label>'+
-        '</div>'+
+        //'<div class="language-select" ng-if="visible">'+
+          //'<label>'+
+            //'{{"directives.language-select.Language" | translate}}:'+
+
+            '<div ng-repeat="languageName in localesDisplayNames">'+
+              '<img class="pull-right"  ng-src="images/flags/{{languageName}}.png" ng-click="changeLanguage(languageName)" alt="{{languageName}} flag">'+
+            '</div>'+
+
+            //'<select ng-model="currentLocaleDisplayName"'+
+            //  'ng-options="localesDisplayName for localesDisplayName in localesDisplayNames"'+
+            //  'ng-change="changeLanguage(currentLocaleDisplayName)">'+
+           // '</select>'+
+         // '</label>'+
+       // '</div>'+
       '',
       controller: function ($scope) {
         $scope.currentLocaleDisplayName = LocaleService.getLocaleDisplayName();

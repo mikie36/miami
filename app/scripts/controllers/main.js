@@ -8,10 +8,8 @@
  * Controller of the miamiApp
  */
 angular.module('miamiApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, LocaleService) {
+
+        $scope.localesDisplayNames = LocaleService.getLocalesDisplayNames();
+
   });

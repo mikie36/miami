@@ -1,8 +1,13 @@
-<div class="jumbotron">
-  <div ng-translate-language-select></div>
-  <h1>Website Under Construction</h1><h1>Site en construction</h1><h1>しばらくお待ち下さい</h1>
-    {{"views.main.Splendid!" | translate}}
-    <p  class="lead">
-        <img src="images/logo.png" alt="Miamisoul logo"><br>
-    </p>
-</div>
+
+  <!-- <h1>Website Under Construction</h1><h1>Site en construction</h1><h1>しばらくお待ち下さい</h1> -->
+
+  <div class="col-md-3">
+  	<img src="images/miamican.png" alt="Miamisoul"><br>
+  </div>
+  <div class="col-md-offset-1 col-md-8">
+  	<h2 class="title">MIAMI Soul</h2>
+
+    <p class="text">{{"miamisoul.without" | translate}}</p>
+	<div ng-bind-html="'miamisoul.resume' | translate"></div>
+  </div>
+

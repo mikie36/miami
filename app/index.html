@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html ng-app="miamiApp">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" ng-attr-content="{{pageContent}}" content="Miami soul Natural Soft Drink">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="miamiApp">
+  <body>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -62,10 +62,7 @@
 
     <div class="container">
 		<div class="clearfix">
-		  <div class="pull-right">
-			<span class="glyphicon glyphicon-time"></span>
-			{{currentTime | date:'medium'}}
-		  </div>
+		  <div ng-translate-language-select></div>
 		</div>
 		<div ng-view=""></div>
     </div>
@@ -78,7 +75,7 @@
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
+<!--      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -86,7 +83,7 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -110,7 +107,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-		<script src="scripts/controllers/appCtrl.js"></script>
+		    <script src="scripts/controllers/appCtrl.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/services/LocaleService.js"></script>
