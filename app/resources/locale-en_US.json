@@ -1,4 +1,10 @@
 {
+  "miamisoul.without" : "No Taurine - No Cafeine",
+  "miamisoul.resume" : "<p class='text'>A healthy drink that contains herb and vitamins </br> delivering both energy and nutrition's that helps with</br> blood circulation, and metabolic wastes from your body </br></br> Reduces tisk of develping cancer, reduction in obésity</br> relief from stomach pain, improvement of degestive </br> disorders, improving signs of mental distress. </p>",
+  "home":"Home",
+  "about":"About",
+  "contact": "Contact",
+
   "PAGE_TITLE": "i18n for your AngularJS applications",
   "PAGE_CONTENT": "How to translate your AngularJS applications without page reload with angular-translate",
 

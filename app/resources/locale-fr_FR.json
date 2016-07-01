@@ -1,6 +1,9 @@
 {
   "miamisoul.without" : "Sans taurine - Sans Caféine",
   "miamisoul.resume" : "<p class='text'>Riche en Minéraux et en Vitamines, elle délive </br> de l'energie et participe à la nutrition des cellules.</br> Elle aide la circulation sanguine, est antioxydante,</br> permet l'élimination des substances toxique et</br> des déchets métaboliques de notre corp. </br></br> Elle diminue les risque de cancer et d'obésité, </br> soulage les maux de ventre, améliore les troubles </br> digestifs et attenue le stress. </p>",
+  "home":"Accueil",
+  "about":"A propos",
+  "contact": "Contact",
 
 
   "PAGE_TITLE": "i18n for your AngularJS applications",

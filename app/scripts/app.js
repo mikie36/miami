@@ -26,6 +26,7 @@ angular
       'ru_RU': 'Russian',
       'en_US': 'English',
       'fr_FR': 'French',
+      'cn_CN': 'Chinese',
       'jp_JP': 'Japanese'
     },
     'preferredLocale': 'en_US'
