@@ -16,11 +16,11 @@ angular.module('miamiApp')
         //'<div class="language-select" ng-if="visible">'+
           //'<label>'+
             //'{{"directives.language-select.Language" | translate}}:'+
-
-            '<div ng-repeat="languageName in localesDisplayNames">'+
-              '<img class="pull-right"  ng-src="images/flags/{{languageName}}.png" ng-click="changeLanguage(languageName)" alt="{{languageName}} flag">'+
-            '</div>'+
-
+            '<div class="col-md-12 languagePicker">' +
+              '<div ng-repeat="languageName in localesDisplayNames">'+
+                '<img class="pull-right flags"  ng-src="images/flags/{{languageName}}.png" ng-click="changeLanguage(languageName)" alt="{{languageName}} flag">'+
+              '</div>'+
+            '</div>' +
             //'<select ng-model="currentLocaleDisplayName"'+
             //  'ng-options="localesDisplayName for localesDisplayName in localesDisplayNames"'+
             //  'ng-change="changeLanguage(currentLocaleDisplayName)">'+

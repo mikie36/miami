@@ -78,6 +78,8 @@ angular
 
     $translateProvider.preferredLanguage(LOCALES.preferredLocale);
     $translateProvider.useLocalStorage();
+    
+    $translateProvider.useSanitizeValueStrategy(null);
   })
   // Angular Dynamic Locale
   .config(function (tmhDynamicLocaleProvider) {

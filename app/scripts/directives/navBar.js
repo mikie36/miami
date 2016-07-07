@@ -7,7 +7,7 @@ angular.module('miamiApp')
       replace: true,
       template: ''+
 
-            '<div ng-repeat="languageName in localesDisplayNames">'+
+            '<div style="height: 21px;" ng-repeat="languageName in localesDisplayNames">'+
               '<img class="pull-right"  ng-src="images/flags/{{languageName}}.png" ng-click="changeLanguage(languageName)" alt="{{languageName}} flag">'+
             '</div>'+
 

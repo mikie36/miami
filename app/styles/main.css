@@ -112,3 +112,29 @@ header[role="banner"] {
     }
   }
 }
+
+
+
+.languagePicker {
+  height: 21px;
+}
+
+.flags{
+  cursor:pointer;
+  margin: 1px;
+}
+
+.flags:hover {
+  outline: 1px solid grey;
+}
+
+.flags:active {
+    filter: brightness(70%);
+}
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
