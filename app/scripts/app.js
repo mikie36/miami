@@ -23,11 +23,11 @@ angular
   .constant('VERSION_TAG', /*VERSION_TAG_START*/new Date().getTime()/*VERSION_TAG_END*/)
   .constant('LOCALES', {
     'locales': {
-      'ru_RU': 'Russian',
+      // 'ru_RU': 'Russian',
       'en_US': 'English',
-      'fr_FR': 'French',
-      'cn_CN': 'Chinese',
-      'jp_JP': 'Japanese'
+      'fr_FR': 'French'
+      // 'cn_CN': 'Chinese',
+      // 'jp_JP': 'Japanese'
     },
     'preferredLocale': 'en_US'
   })
@@ -43,6 +43,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
       })
       .otherwise({
         redirectTo: '/'

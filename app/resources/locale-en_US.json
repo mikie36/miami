@@ -4,6 +4,7 @@
   "home":"Home",
   "about":"About",
   "contact": "Contact",
+  "miami.header" : "Faites renaitre vorte bien-être",
 
   "PAGE_TITLE": "i18n for your AngularJS applications",
   "PAGE_CONTENT": "How to translate your AngularJS applications without page reload with angular-translate",
