@@ -24,8 +24,10 @@ angular
   .constant('LOCALES', {
     'locales': {
       // 'ru_RU': 'Russian',
+      'ar': 'Arabic',
       'en_US': 'English',
       'fr_FR': 'French'
+
       // 'cn_CN': 'Chinese',
       // 'jp_JP': 'Japanese'
     },
