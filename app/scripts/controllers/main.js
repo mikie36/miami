@@ -12,15 +12,7 @@ angular.module('miamiApp')
 
         $scope.localesDisplayNames = LocaleService.getLocalesDisplayNames();
 
-  $("#owl-demo").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
+
 
 
     //     $(document).ready(function() {
@@ -43,8 +35,27 @@ angular.module('miamiApp')
 	   //    });
      
     // });
+    $(".owl-carousel").owlCarousel({
+	      autoPlay: 3000,
+	      items : 4, // THIS IS IMPORTANT
+	      responsive : {
+	            480 : { items : 3  }, // from zero to 480 screen width 4 items
+	            768 : { items : 4  }, // from 480 screen widthto 768 6 items
+	            1024 : { items : 5 }, // from 768 screen width to 1024 8 items
+	            1366 : { items : 6 }
+	        },
+	      lazyLoad:true,
+
+		    margin:10
+	  });
 
 	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+		    items:4,
+		    lazyLoad:true,
+		    loop:true,
+		    margin:10
+		});
 	  // Add smooth scrolling to all links in navbar + footer link
 	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
