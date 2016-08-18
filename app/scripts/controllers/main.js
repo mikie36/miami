@@ -50,12 +50,6 @@ angular.module('miamiApp')
 	  });
 
 	$(document).ready(function(){
-		$('.owl-carousel').owlCarousel({
-		    items:4,
-		    lazyLoad:true,
-		    loop:true,
-		    margin:10
-		});
 	  // Add smooth scrolling to all links in navbar + footer link
 	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 

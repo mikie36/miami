@@ -53,7 +53,7 @@ a {
 }
 .bg-overlay {
   padding: 100px 0 50px;
-  background-color: RGBA(0, 255, 0, 0.1);
+  background-color: RGBA(0, 50, 0, 0.2);
 }
 .banner-text h2 {
   font-size: 50px;
@@ -175,15 +175,6 @@ a {
 
 /*-----Portfolio or Work Ends-------*/
 
-
-}
-.title-font {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  border-bottom: 2px solid #44D62C;
-  display: inline-block;
-  line-height: 35px;
-}
 
 
 /*-----Testimonials Starts-------*/
