@@ -36,6 +36,11 @@ angular
   // Router
   .config(function ($routeProvider) {
     $routeProvider
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl',
+        controllerAs: 'main'
+      })
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',

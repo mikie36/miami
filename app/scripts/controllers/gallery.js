@@ -8,7 +8,7 @@
  * Controller of the miamiApp
  */
 angular.module('miamiApp')
-  .controller('AboutCtrl', function () {
+  .controller('GalleryCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
