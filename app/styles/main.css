@@ -7,6 +7,7 @@
 }
 body {
   /*font-family: 'Work Sans', sans-serif;*/
+  color: #676767; 
   background-color: #000;
 }
 .title-font {
@@ -235,9 +236,9 @@ a {
   background-size: cover;
   color: white;
   cursor: default;
-  text-align: center;
   width: 100%;
   float: left;
+  margin-bottom: 20px;
 }
 .call-overlay {
   padding: 50px 0px;
@@ -276,7 +277,7 @@ a {
   width: 100%;
   float: left;
 }
-.about h3 {
+.abouttittle h3 {
   margin-top: 0px;
   margin-bottom: 50px;
   border-bottom: 2px solid #44D62C;
@@ -448,4 +449,22 @@ nav > li > a:focus, .nav > li > a:hover, .nav > li > a:focus, .nav > li.active >
   display: block;
   width: 100%;
   height: auto;
+}
+
+
+.languagePicker {
+  height: 21px;
+}
+
+.flags{
+  cursor:pointer;
+  margin: 1px;
+}
+
+.flags:hover {
+  outline: 1px solid grey;
+}
+
+.flags:active {
+    filter: brightness(70%);
 }
