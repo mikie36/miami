@@ -26,85 +26,72 @@ angular.module('miamiApp')
     $scope.imagesOfCanne = [
     {
       'url': 'images/canne/1.jpg',
-      'thumbUrl': 'images/Canne/1.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/Canne/1.jpg'
     },
     {
       'url': 'images/canne/2.jpg',
-      'thumbUrl': 'images/canne/2.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/2.jpg'
     },
     {
       'url': 'images/canne/3.jpg',
-      'thumbUrl': 'images/canne/3.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/3.jpg'
     },
     {
       'url': 'images/canne/4.jpg',
-      'thumbUrl': 'images/canne/4.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/4.jpg'
     },
     {
       'url': 'images/canne/5.jpg',
-      'thumbUrl': 'images/canne/5.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/5.jpg'
     },
     {
       'url': 'images/canne/6.jpg',
-      'thumbUrl': 'images/canne/6.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/6.jpg'
     },
     {
       'url': 'images/canne/7.jpg',
-      'thumbUrl': 'images/canne/7.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/7.jpg'
     },
     {
       'url': 'images/canne/8.jpg',
-      'thumbUrl': 'images/canne/8.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/8.jpg'
     },
     {
       'url': 'images/canne/9.jpg',
-      'thumbUrl': 'images/canne/9.jpg',
-      'caption': 'This image has dimensions 2048x1519 and the img element is scaled to fit inside the window.'
+      'thumbUrl': 'images/canne/9.jpg'
     }
     ];
 
-    $scope.imagesOfExhibition = [
-    {
-      'url': 'images/exhibition/1.jpg',
-      'thumbUrl': 'images/exhibition/1.jpg'
-    },
-    {
-      'url': 'images/exhibition/2.jpg',
-      'thumbUrl': 'images/exhibition/2.jpg'
-    },
-    {
-      'url': 'images/exhibition/4.jpg',
-      'thumbUrl': 'images/exhibition/4.jpg'
-    },
-    {
-      'url': 'images/exhibition/5.jpg',
-      'thumbUrl': 'images/exhibition/5.jpg'
-    },
-    {
-      'url': 'images/exhibition/6.jpg',
-      'thumbUrl': 'images/exhibition/6.jpg'
-    },
-    {
-      'url': 'images/exhibition/7.jpg',
-      'thumbUrl': 'images/exhibition/7.jpg'
-    },
-    {
-      'url': 'images/exhibition/8.jpg',
-      'thumbUrl': 'images/exhibition/8.jpg'
-    },
-    {
-      'url': 'images/exhibition/9.jpg',
-      'thumbUrl': 'images/exhibition/9.jpg'
-    }
-    ];
+    // $scope.imagesOfExhibition = [
+    // {
+    //   'url': 'images/exhibition/2.jpg',
+    //   'thumbUrl': 'images/exhibition/2.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/4.jpg',
+    //   'thumbUrl': 'images/exhibition/4.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/5.jpg',
+    //   'thumbUrl': 'images/exhibition/5.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/6.jpg',
+    //   'thumbUrl': 'images/exhibition/6.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/7.jpg',
+    //   'thumbUrl': 'images/exhibition/7.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/8.jpg',
+    //   'thumbUrl': 'images/exhibition/8.jpg'
+    // },
+    // {
+    //   'url': 'images/exhibition/9.jpg',
+    //   'thumbUrl': 'images/exhibition/9.jpg'
+    // }
+    // ];
 
     $scope.imagesOfApparition = [
     {
@@ -224,14 +211,14 @@ angular.module('miamiApp')
 	    //carousel.to(carousel.relative(n));
 	  });
 
-	  $(".exhibition-clik").on('click', '.owl-item', function(e) {
-	    var carousel = $('.exhibition-clik').data('exhibition-clik');
-	    e.preventDefault();
-	    var n = $(this).index();
-	    console.log(n);
-	    Lightbox.openModal($scope.imagesOfExhibition, n);
-	    //carousel.to(carousel.relative(n));
-	  });
+	  // $(".exhibition-clik").on('click', '.owl-item', function(e) {
+	  //   var carousel = $('.exhibition-clik').data('exhibition-clik');
+	  //   e.preventDefault();
+	  //   var n = $(this).index();
+	  //   console.log(n);
+	  //   Lightbox.openModal($scope.imagesOfExhibition, n);
+	  //   //carousel.to(carousel.relative(n));
+	  // });
 
 	  $(".apparition-clik").on('click', '.owl-item', function(e) {
 	    var carousel = $('.apparition-clik').data('apparition-clik');
